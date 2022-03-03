@@ -13,6 +13,7 @@
 		202D24FC27D068FB00A21DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202D24FA27D068FB00A21DEF /* Main.storyboard */; };
 		202D24FE27D068FE00A21DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202D24FD27D068FE00A21DEF /* Assets.xcassets */; };
 		202D250127D068FE00A21DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202D24FF27D068FE00A21DEF /* LaunchScreen.storyboard */; };
+		7DAC86D94460472FE33D628B /* Pods_JimeKadai1_storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDC4B0B7A47413C32D146D /* Pods_JimeKadai1_storyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		202D24FD27D068FE00A21DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		202D250027D068FE00A21DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		202D250227D068FE00A21DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66795989837E7C0C43F4FEF8 /* Pods-JimeKadai1_storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimeKadai1_storyboard.debug.xcconfig"; path = "Target Support Files/Pods-JimeKadai1_storyboard/Pods-JimeKadai1_storyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		B54242DE87A8EBCAE96676B0 /* Pods-JimeKadai1_storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimeKadai1_storyboard.release.xcconfig"; path = "Target Support Files/Pods-JimeKadai1_storyboard/Pods-JimeKadai1_storyboard.release.xcconfig"; sourceTree = "<group>"; };
+		EDFDC4B0B7A47413C32D146D /* Pods_JimeKadai1_storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JimeKadai1_storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAC86D94460472FE33D628B /* Pods_JimeKadai1_storyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				202D24F327D068FB00A21DEF /* JimeKadai1_storyboard */,
 				202D24F227D068FB00A21DEF /* Products */,
+				36EABDCA044EBC1EFBB41017 /* Pods */,
+				9D1522C2D236CF83207EE1D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = JimeKadai1_storyboard;
 			sourceTree = "<group>";
 		};
+		36EABDCA044EBC1EFBB41017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66795989837E7C0C43F4FEF8 /* Pods-JimeKadai1_storyboard.debug.xcconfig */,
+				B54242DE87A8EBCAE96676B0 /* Pods-JimeKadai1_storyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D1522C2D236CF83207EE1D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDC4B0B7A47413C32D146D /* Pods_JimeKadai1_storyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 202D250527D068FE00A21DEF /* Build configuration list for PBXNativeTarget "JimeKadai1_storyboard" */;
 			buildPhases = (
+				E1342F84D9517FF7E933DA29 /* [CP] Check Pods Manifest.lock */,
+				20E1F85627D078EB002D487F /* ShellScript */,
 				202D24ED27D068FB00A21DEF /* Sources */,
 				202D24EE27D068FB00A21DEF /* Frameworks */,
 				202D24EF27D068FB00A21DEF /* Resources */,
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E1F85627D078EB002D487F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E1342F84D9517FF7E933DA29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JimeKadai1_storyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		202D24ED27D068FB00A21DEF /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		202D250627D068FE00A21DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66795989837E7C0C43F4FEF8 /* Pods-JimeKadai1_storyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +381,7 @@
 		};
 		202D250727D068FE00A21DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54242DE87A8EBCAE96676B0 /* Pods-JimeKadai1_storyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
